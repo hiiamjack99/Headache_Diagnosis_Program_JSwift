@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prolog", "Prolog\Prolog.csproj", "{5794451D-5EBD-4230-A449-C12AE5963C8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5794451D-5EBD-4230-A449-C12AE5963C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5794451D-5EBD-4230-A449-C12AE5963C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5794451D-5EBD-4230-A449-C12AE5963C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5794451D-5EBD-4230-A449-C12AE5963C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9783EAE-C049-474F-B4C9-AE4D9D3D57F1}
+	EndGlobalSection
+EndGlobal
