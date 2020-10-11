@@ -65,6 +65,11 @@ diagnose(daunuadau) :-
 	trieuchunga(utai),
 	trieuchungb(buonnon).
 
+diagnose(daunuadau) :-
+	vungdau(tran),
+	trieuchunga(thaiduong),
+	trieuchungb(loau).
+
 % dau dau tung cum
 
 diagnose(daudautungcum) :-
@@ -93,7 +98,8 @@ diagnose(daudautungcum) :-
 
 
 diagnose(daudaumantinh) :-
-	vungdau(daday).
+	vungdau(daday),
+	trieuchunga(utai).
 
 diagnose(daudaumantinh) :-
 	vungdau(daday),
@@ -102,6 +108,10 @@ diagnose(daudaumantinh) :-
 
 diagnose(daudaumantinh) :-
 	vungdau(tran),
+	trieuchunga(matngu).
+
+diagnose(daudaumantinh) :-
+	vungdau(daday),
 	trieuchunga(matngu).
 
 diagnose(daudaumantinh) :-
