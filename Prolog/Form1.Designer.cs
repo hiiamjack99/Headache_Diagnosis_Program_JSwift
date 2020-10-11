@@ -33,13 +33,13 @@
             this.btn_start = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pn_vungdau = new System.Windows.Forms.Panel();
             this.btn_Back = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_reset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_Next = new Bunifu.Framework.UI.BunifuFlatButton();
             this.rd3 = new System.Windows.Forms.RadioButton();
             this.rd2 = new System.Windows.Forms.RadioButton();
             this.rd1 = new System.Windows.Forms.RadioButton();
             this.rd4 = new System.Windows.Forms.RadioButton();
             this.pn_start = new System.Windows.Forms.Panel();
-            this.btn_reset = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pn_vungdau.SuspendLayout();
@@ -79,6 +79,7 @@
             this.btn_start.IconZoom = 90D;
             this.btn_start.IsTab = false;
             this.btn_start.Location = new System.Drawing.Point(201, 230);
+            this.btn_start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_start.Name = "btn_start";
             this.btn_start.Normalcolor = System.Drawing.Color.Red;
             this.btn_start.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -112,7 +113,7 @@
             this.btn_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Back.BorderRadius = 0;
-            this.btn_Back.ButtonText = "Back";
+            this.btn_Back.ButtonText = "Reset";
             this.btn_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Back.DisabledColor = System.Drawing.Color.Gray;
             this.btn_Back.Iconcolor = System.Drawing.Color.Transparent;
@@ -135,11 +136,47 @@
             this.btn_Back.selected = false;
             this.btn_Back.Size = new System.Drawing.Size(100, 39);
             this.btn_Back.TabIndex = 1;
-            this.btn_Back.Text = "Back";
+            this.btn_Back.Text = "Reset";
             this.btn_Back.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Back.Textcolor = System.Drawing.Color.White;
             this.btn_Back.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btn_reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btn_reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_reset.BorderRadius = 0;
+            this.btn_reset.ButtonText = "Reset";
+            this.btn_reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_reset.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_reset.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_reset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_reset.Iconimage")));
+            this.btn_reset.Iconimage_right = null;
+            this.btn_reset.Iconimage_right_Selected = null;
+            this.btn_reset.Iconimage_Selected = null;
+            this.btn_reset.IconMarginLeft = 0;
+            this.btn_reset.IconMarginRight = 0;
+            this.btn_reset.IconRightVisible = true;
+            this.btn_reset.IconRightZoom = 0D;
+            this.btn_reset.IconVisible = true;
+            this.btn_reset.IconZoom = 90D;
+            this.btn_reset.IsTab = false;
+            this.btn_reset.Location = new System.Drawing.Point(202, 257);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btn_reset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btn_reset.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_reset.selected = false;
+            this.btn_reset.Size = new System.Drawing.Size(100, 39);
+            this.btn_reset.TabIndex = 1;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_reset.Textcolor = System.Drawing.Color.White;
+            this.btn_reset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.Visible = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_Next
             // 
@@ -234,42 +271,6 @@
             this.pn_start.Size = new System.Drawing.Size(551, 323);
             this.pn_start.TabIndex = 2;
             // 
-            // btn_reset
-            // 
-            this.btn_reset.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_reset.BorderRadius = 0;
-            this.btn_reset.ButtonText = "Reset";
-            this.btn_reset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_reset.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_reset.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_reset.Iconimage = ((System.Drawing.Image)(resources.GetObject("btn_reset.Iconimage")));
-            this.btn_reset.Iconimage_right = null;
-            this.btn_reset.Iconimage_right_Selected = null;
-            this.btn_reset.Iconimage_Selected = null;
-            this.btn_reset.IconMarginLeft = 0;
-            this.btn_reset.IconMarginRight = 0;
-            this.btn_reset.IconRightVisible = true;
-            this.btn_reset.IconRightZoom = 0D;
-            this.btn_reset.IconVisible = true;
-            this.btn_reset.IconZoom = 90D;
-            this.btn_reset.IsTab = false;
-            this.btn_reset.Location = new System.Drawing.Point(202, 257);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btn_reset.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btn_reset.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_reset.selected = false;
-            this.btn_reset.Size = new System.Drawing.Size(100, 39);
-            this.btn_reset.TabIndex = 1;
-            this.btn_reset.Text = "Reset";
-            this.btn_reset.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_reset.Textcolor = System.Drawing.Color.White;
-            this.btn_reset.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Visible = false;
-            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -299,6 +300,7 @@
             this.Controls.Add(this.pn_vungdau);
             this.Controls.Add(this.lbQuestion);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chuẩn đoán bệnh đau đầu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pn_vungdau.ResumeLayout(false);

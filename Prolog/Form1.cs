@@ -177,16 +177,9 @@ namespace Prolog
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            if (myAnswers.Count > 0)
-            {
-                currentQuestion = myAnswers.Peek().QuestionIndex;
-                BindQuestion(currentQuestion);
-                myAnswers.Pop();
-            }
-            else
-            {
-
-            }
+            pn_start.Visible = true;
+            pn_vungdau.Visible = false;
+            lbQuestion.Text = "Chương trình chẩn đoán bệnh đau đầu!!!";
         }
 
         private void btn_reset_Click(object sender, EventArgs e)
